@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="myApp" class="container">
+        <div class="details">
+            <div class="cloudiness">
+                <i class="fa solid fa-cloud"></i>
+                <span>0%</span>
+            </div>
+            <div class="windSpeed">
+                <i class="fa solid fa-wind"></i>
+                <span>0 m/s</span>
+            </div>
+            <div class="humidity">
+                <i class="fa solid fa-droplet"></i>
+                <span class="humidity">0%</span>
+            </div>
+        </div>
+        <div class="city">
+            <input type="text" placeholder="Enter city name">
+            <button class="search"><i class="fas fa-search"></i>Search</button>
+        </div>
+        <div class="current">
+            <h5 class="displayCity">---</h5>
+            <div class="temperature">
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                <h1>0&deg;C</h1>
+            </div>
+            <p>Max: <span class="maxTemp">0&deg;C</span></p>
+            <p>Min: <span class="minTemp">0&deg;C</span></p>
+        </div>
+    </div>
+    <script src="APIcall.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
